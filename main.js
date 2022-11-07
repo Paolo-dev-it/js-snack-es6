@@ -12,10 +12,22 @@ const min = 2;
 
 const max = 4;
 
-myArray.forEach((element, index) => { //forEach version
-   
-    if (index >= min && index <= max){
-        console.log(element)
-    }
+//forEach version
 
-});
+// myArray.forEach((element, index) => { 
+   
+//     if (index >= min && index <= max){
+//         console.log(element)
+//     }
+
+// });
+
+//Filter version
+
+const people = myArray.filter((element, index) => {
+    if (index >= min && index <= max){
+        return true;
+    }
+})
+
+console.log(people);
