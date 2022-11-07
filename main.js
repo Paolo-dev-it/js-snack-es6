@@ -57,10 +57,21 @@ let students = [
 
     //Snack 2 point-2
 
-    const grades = students.filter((element) => {
-        if(element.grades > 70){
+    // const grades = students.filter((element) => {
+    //     if(element.grades > 70){
+    //        return element.name;
+    //        }
+    //     });
+
+    //   console.log(grades);
+
+    //Snack 2 point-3
+
+    const idGrades = students.filter((element) => {
+        if (element.grades > 70 && element.id >= 120){
             return element.name;
         }
     });
 
-  console.log(grades);
+    console.log(idGrades);
+
