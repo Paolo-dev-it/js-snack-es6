@@ -6,21 +6,24 @@ Creiamo un nuovo array contenente i valori che hanno la posizione compresa tra i
 Eseguiamo questo esercizio prima con forEach e poi con filter.
 esempio: dati i valori min: 2 e come max: 4 i nomi nell'array nuovo saranno i nomi compresi tra queste posizioni 2 e 4 */
 
-// const myArray = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
+const myArray = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
 
-// const min = 2;
+const myNewArray = [];
 
-// const max = 4;
+const min = 2;
 
-//forEach version
+const max = 4;
 
-// myArray.forEach((element, index) => { 
+// forEach version
+
+myArray.forEach((element, index) => { 
    
-//     if (index >= min && index <= max){
-//         console.log(element)
-//     }
+    if (index >= min && index <= max){
+        myNewArray.push(element);
+    }
+});
+console.log(myNewArray);
 
-// });
 
 //Filter version
 
@@ -37,15 +40,15 @@ esempio: dati i valori min: 2 e come max: 4 i nomi nell'array nuovo saranno i no
 2-  Dobbiamo creare un nuovo array con gli studenti che hanno un totale di voti superiore a 70
 3-  Dobbiamo creare un nuovo array di tutti gli studenti che hanno un totale di voti superiore a 70 e id superiore a 120 */
 
-let students = [
-    { name: 'Marco', id: 213, grades: 78 },
-    { name: 'Paola', id: 110, grades: 96 },
-    { name: 'Andrea', id: 250, grades: 48 },
-    { name: 'Gaia', id: 145, grades: 74 },
-    { name: 'Luigi', id: 196, grades: 68 },
-    { name: 'Piero', id: 102, grades: 50 },
-    { name: 'Francesca', id: 120, grades: 84 },
-];
+// let students = [
+//     { name: 'Marco', id: 213, grades: 78 },
+//     { name: 'Paola', id: 110, grades: 96 },
+//     { name: 'Andrea', id: 250, grades: 48 },
+//     { name: 'Gaia', id: 145, grades: 74 },
+//     { name: 'Luigi', id: 196, grades: 68 },
+//     { name: 'Piero', id: 102, grades: 50 },
+//     { name: 'Francesca', id: 120, grades: 84 },
+// ];
 
     //Snack 2 point-1
 
@@ -67,11 +70,14 @@ let students = [
 
     //Snack 2 point-3
 
-    const idGrades = students.filter((element) => {
-        if (element.grades > 70 && element.id >= 120){
-            return element.name;
-        }
-    });
+    //  const idGrades = students.filter((element) => {
+    //      if (element.grades > 70 && element.id >= 120){
+    //          return element.name;
+    //      }
+    //  });
 
-    console.log(idGrades);
+    //  console.log(idGrades);
+
+     
+    
 
