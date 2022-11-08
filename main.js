@@ -109,13 +109,12 @@ Generare numeri random al posto degli 0 nelle proprietà: Punti fatti e falli su
 
 
 let array = [
-    {nome: 'Inter', puntiFatti: 0, falliSubiti: 0 },
-    {nome: 'Milan', puntiFatti: 0, falliSubiti: 0 },
-    {nome: 'Juve', puntiFatti: 0, falliSubiti: 0 },
-    {nome: 'Roma', puntiFatti: 0, falliSubiti: 0 },
+    {'nome': 'Inter', 'puntiFatti': 0, 'falliSubiti': 0 },
+    {'nome': 'Milan', 'puntiFatti': 0, 'falliSubiti': 0 },
+    {'nome': 'Juve', 'puntiFatti': 0, 'falliSubiti': 0 },
+    {'nome': 'Roma', 'puntiFatti': 0, 'falliSubiti': 0 },
 ];
 
-let array2 = [];
 
 // let randomPoints = array.map(({puntiFatti}) => Math.floor(Math.random(puntiFatti) * 100))
 
@@ -132,8 +131,15 @@ array.forEach((elemento) => {
 
     elemento.puntiFatti = randomPoints;
     elemento.falliSubiti = randomFoul;
-    
+
 })
 
-console.log(array)
+console.log(array);
+
+let newArray = array.map(({nome, falliSubiti})  => {
+    return {nome, falliSubiti}
+})
+
+console.log(newArray);
+
 
