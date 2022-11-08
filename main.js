@@ -97,14 +97,9 @@ let array = [
 ];
 
 
+let min = Math.min(...array.map(({peso}) => peso));
 
-
-
-
-
-
-
-
+document.getElementById('peso').innerHTML = "Il peso minimo delle biciclette è " + min;
 
 
 
