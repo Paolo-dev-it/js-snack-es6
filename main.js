@@ -35,6 +35,9 @@ console.log(myNewArray);
 
 // console.log(people);
 
+
+
+
 /* Snack 2
 1- Dobbiamo creare delle targhe con il loro nome in maiuscolo. Ci serve quindi un nuovo array di stringhe. Ogni elemento del nuovo array sarà il nome dello studente ma con tutte le lettere maiuscole.
 2-  Dobbiamo creare un nuovo array con gli studenti che hanno un totale di voti superiore a 70
@@ -61,9 +64,9 @@ console.log(myNewArray);
     //Snack 2 point-2
 
     // const grades = students.filter((element) => {
-    //     if(element.grades > 70){
-    //        return element.name;
-    //        }
+    //     
+    //        return element.grades > 70;
+    //        
     //     });
 
     //   console.log(grades);
