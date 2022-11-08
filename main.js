@@ -117,13 +117,23 @@ let array = [
 
 let array2 = [];
 
-let randomPoints = array.map(({puntiFatti}) => Math.floor(Math.random(puntiFatti) * 100))
+// let randomPoints = array.map(({puntiFatti}) => Math.floor(Math.random(puntiFatti) * 100))
 
-let randomFoul = array.map(({falliSubiti}) => Math.floor(Math.random(falliSubiti) * 30))
+// let randomFoul = array.map(({falliSubiti}) => Math.floor(Math.random(falliSubiti) * 30))
 
-console.log(randomPoints)
+// console.log(randomPoints)
 
-console.log(randomFoul)
+// console.log(randomFoul)
 
+array.forEach((elemento) => {
 
+    let randomPoints = Math.floor(Math.random() * 100);
+    let randomFoul = Math.floor(Math.random() * 30);
+
+    elemento.puntiFatti = randomPoints;
+    elemento.falliSubiti = randomFoul;
+    
+})
+
+console.log(array)
 
